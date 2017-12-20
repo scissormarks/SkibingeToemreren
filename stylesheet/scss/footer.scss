@@ -1,0 +1,33 @@
+/* Footer Style */
+footer {
+	color: white;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+	display: block;
+	height: 250px;
+	.container {
+		position: absolute;
+		width: 100%;
+		justify-content: center;
+		flex-wrap: wrap;
+		bottom: 0;
+	}
+	.phonecontainer {
+		position: relative;
+		margin: $bigmar;
+		bottom: unset;
+		display: block;
+	}
+	.disclaimer {
+
+		padding: 1rem;
+		width: 100%;
+		background-color: #111;
+		height: 124px;
+	}
+}

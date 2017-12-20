@@ -1,0 +1,82 @@
+@media screen and ($width-mobile : $target-tablet-width) {
+	.content {
+		font-size: .8em;
+	}
+	.contentcontainer {
+		max-width: 960px;
+	}
+	.topnavigation {
+		.topnavwrapper {
+			max-width: 960px;
+		}
+	}
+	.skill {
+		max-width: 40%;
+	}
+}
+@media screen and ($width-mobile : $target-mobile-width) {
+	.content {
+		font-size: 0.7em;
+	}
+	.pagecontent {
+		height: 5vh;
+		min-height: 32px;
+	}
+	section {
+		.entry-content {
+			padding: $bigpad;
+
+			img {
+			}
+		}
+	}
+
+	.skill {
+		max-width: 100%;
+		margin: $defmar 0;
+	}
+	.certificatecontainer {
+		.certificate {
+			font-size: 0.8em;
+		}
+	}
+	//NAVIGATION
+	.topnavigation {
+		display: none;
+	}
+	.mainnav {
+		.mainnavwrapper {
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			height: 80px;
+			transition: ease 0.5s;
+
+			.navicons {
+				display: block;
+			}
+			.main-nav {
+				display: none;
+				transition: ease 0.15s;
+			}
+			ul {
+				li {
+					float: none;
+					a {
+						font-size: 1.2em;
+						text-align: center;
+					}
+				}
+			}
+		}
+		.mainnavwrapper.active {
+			height: 100vh;
+			.main-nav {
+				display: block;
+			}
+		}
+
+	}
+
+//MOBILE WIDTH
+}

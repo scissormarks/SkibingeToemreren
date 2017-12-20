@@ -1,0 +1,248 @@
+/* Base Style */
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin: 0;
+	padding-bottom: 14rem;
+	min-height: 100%;
+	background-color: #Eee;
+}
+.wrapper {
+	display: flex;
+}
+a {
+	text-decoration: none;
+}
+h2 {
+	font-weight: 400;
+}
+h3 {
+	font-weight: 400;
+	font-size: 1.2em;
+}
+
+//Page content
+.content {
+	padding: 0;
+	color: #333;
+	margin: 0 auto;
+}
+.pagecontent {
+	height: 12vh;
+	min-height: 96px;
+	width: 100%;
+}
+header {
+	width: 100%;
+  height: 90vh;
+	overflow: hidden;
+	position: relative;
+	.coverimg {
+		background-image: url(img/cover_img.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position: center;
+		color: white;
+		filter:brightness(50%);
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    height: 95vh;
+	}
+	.covercontainer {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		.logocontainer {
+			position: absolute;
+			top: 35vh;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+		}
+		h1 {
+			font-family: "Monotype Corsiva", serif;
+			font-size: 5.5em;
+			font-weight: normal;
+			text-shadow: 0 3px 6px rgba(0,0,0,0.3);
+			margin: 0 $defmar 0 0;
+		}
+		.logo {
+			height: 15vh;
+			margin: $defmar;
+			border-radius: 12%;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+		}
+		
+	}
+}
+.phonecontainer {
+			position: absolute;
+			bottom: 10vh;
+			font-family: "Roboto", sans-serif;
+			color: white;
+			background: $brandclr;
+			padding: $defpad 2.5vw;
+			border-radius: 4px;
+			text-shadow: 0 3px 6px rgba(0,0,0,0.3);
+			box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+			a {
+				color: white;
+			}
+		}
+.paper {
+	background: white;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+
+}
+
+section {
+	width: 100%;
+	position: relative;
+	font-size: 1.5em;
+	padding: 16px 16px 48px;
+	h2 {
+			
+			color: $brandclr;
+		}
+	.flavortext {
+		padding: $defpad $defpad 0 $defpad;
+		font-size: 0.9em;
+
+		p {
+			text-align: left;
+			color: #858585;
+			padding-bottom: 16px;
+		}
+	}
+	.learnmore {
+		float: right;
+		text-align: right;
+		color: $brandclr;
+		margin: $defmar 0;
+		bottom: 0;
+		border-bottom: 1px rgba(0,0,0,0) solid;
+		transition: ease 0.25s;
+	}
+	.learnmore:hover {
+		border-bottom: 1px $brandclr solid;
+		text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+	}
+	.entry-content {
+		font-size: 0.9em;
+		padding: 0 5%;
+		h2 {
+			font-size: 2em;
+		}
+		h3 {
+			text-align: left;
+		}
+		p {
+			font-size: 0.8em;
+			text-align: left;
+			margin-bottom: 24px;
+		}
+		pre img {
+			text-align: center;
+			max-height: 100%;
+			max-width: 100%;
+			margin: 0 0 0 0 ;
+			border-radius: 8px;
+			border: 1px solid #AFAFAF;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+		}
+		li {
+			padding-bottom: 8px;
+		}
+	}
+}
+.contentcontainer {
+	width: 100%;
+	max-width: $content-width;
+	justify-content: center;
+	color: $textclr;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	text-align: center;
+	.contenttextcontainer {
+		width: 100%;
+		border-radius: 8px;
+		h2 {
+			margin: $bigmar 0 0 0;
+		}
+		p {
+			margin: $bigmar 0 ;
+			font-size: 1.1em;
+		}
+	}
+}
+.skillscontainer {
+	flex-wrap: wrap;
+	justify-content: space-around;
+}	
+.skill {
+border-radius: 4px;
+border: 1px solid #AFAFAF;
+margin: $defmar;
+max-width: 21%;
+}
+.skillthumbnail {
+	width: 100%;
+}
+	
+.certificatecontainer {
+	width: 100%;
+	justify-content: center;
+	flex-wrap: wrap;
+	.certificate {	
+	justify-content: space-around;
+	width: 100%;
+	margin: $smamar;
+	border: 1px solid #AFAFAF;
+	border-radius: 4px;
+	.certificatetextcontainer {
+
+		border-radius: 4px;
+		border: 0 1px 0 0 solid #AFAFAF;
+		text-align: left;
+		width: auto;
+		min-width: 66%;
+		max-width: 66%;
+
+	}
+	.certificatelogocontainer {
+		border-radius: 4px;
+		width: 34%;
+		padding: 16px;
+			a {
+				width: 100%;
+				justify-content: center;
+				align-items: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			
+			}
+		}
+	}
+}
